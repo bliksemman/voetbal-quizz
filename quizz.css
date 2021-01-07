@@ -1,0 +1,80 @@
+body {
+    background-color: #007000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 150%;
+    font-size: large;
+    background-image: url("./grass.png");
+}
+
+#game-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    color: #FFBF00;
+}
+
+#game {
+    background-color: #23882399;
+    padding: 2rem;
+    min-height: 400px;
+    border:6px solid #FAFAFA;
+}
+
+.copyright {
+  font-size: x-small;
+  text-align: right;
+  color: #FFBF00;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: #FAFAFA;
+    list-style-type: none;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+li:before {content: "> ";}
+
+.screen {
+      opacity: 0;
+      animation: fadeIn ease 0.8s;
+      animation-delay: 0.1s;
+      animation-fill-mode: forwards;
+}
+
+.score {
+  color: #FAFAFA;
+}
+.score-titel {
+  color: #FFBF00;
+}
+.score, .score-titel {
+    font-size: x-large;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
